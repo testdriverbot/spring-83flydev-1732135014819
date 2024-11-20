@@ -1,0 +1,10 @@
+version: 4.1.27
+steps:
+  - prompt: Click on "Collaborative Canvas" link.
+    commands:
+      - command: hover-text
+        text: Collaborative Canvas
+        description: link to Collaborative Canvas
+        action: click
+      - command: assert
+        expect: Collaborative Canvas is visible on the page
