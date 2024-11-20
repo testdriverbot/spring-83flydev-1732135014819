@@ -1,0 +1,18 @@
+version: 4.1.27
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Click on "Cheese Board pizza tooting page" link.
+    commands:
+      - command: hover-text
+        text: Cheese Board pizza tooting page
+        description: link to the Cheese Board pizza tooting page
+        action: click
+  - prompt: >-
+      Assert that the Cheese Board page loads successfully.  # Use the content
+      of the file from the environment
+    commands:
+      - command: assert
+        expect: Daily Pizza Flavors is visible on the page
